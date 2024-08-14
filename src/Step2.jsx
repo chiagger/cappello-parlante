@@ -4,9 +4,10 @@ import HP_Magia from "./assets/HP_Magia.png";
 import HP_Prosegui from "./assets/HP_Prosegui.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 
-const Step1 = () => {
+const Step2 = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
+  const [displayError, setDisplayError] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -22,10 +23,10 @@ const Step1 = () => {
   }, []);
 
   const handleChange = (event) => {
+    setDisplayError(false);
     setSelectedOption(event.target.value);
   };
 
-  console.log(selectedOption);
   return (
     <>
       {!isMobile && (
@@ -84,9 +85,21 @@ const Step1 = () => {
                 <option value="4">Essere ignorati</option>
                 <option value="5">Sentire tanto freddo</option>
               </select>
+              {displayError && (
+                <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
+                  Seleziona una risposta per proseguire
+                </div>
+              )}
             </div>
             <a
-              onClick={(e) => e.preventDefault()}
+              onClick={(e) => {
+                e.preventDefault();
+                if (selectedOption) {
+                  window.location.href = "/step-3";
+                } else {
+                  setDisplayError(true);
+                }
+              }}
               href="/step-3"
               style={{ textDecoration: "none", color: "inherit" }}
             >
@@ -148,6 +161,11 @@ const Step1 = () => {
               <option value="4">Essere ignorati</option>
               <option value="5">Sentire tanto freddo</option>
             </select>
+            {displayError && (
+              <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
+                Seleziona una risposta per proseguire
+              </div>
+            )}
           </div>
           <img
             src={HP_Cappello}
@@ -157,7 +175,14 @@ const Step1 = () => {
           ></img>
 
           <a
-            onClick={(e) => e.preventDefault()}
+            onClick={(e) => {
+              e.preventDefault();
+              if (selectedOption) {
+                window.location.href = "/step-3";
+              } else {
+                setDisplayError(true);
+              }
+            }}
             href="/step-3"
             style={{ textDecoration: "none", color: "inherit" }}
           >
@@ -175,4 +200,4 @@ const Step1 = () => {
   );
 };
 
-export default Step1;
+export default Step2;
