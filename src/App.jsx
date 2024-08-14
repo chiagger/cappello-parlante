@@ -36,7 +36,7 @@ const App = () => {
           <img
             src={HP_Cappello}
             style={{
-              width: "30vw",
+              width: "40vw",
               marginTop: "20px",
             }}
           ></img>
@@ -60,18 +60,9 @@ const App = () => {
                 flex: "1 1 50%",
               }}
             >
-              Scopri a quale casa di Magia appartieni!
+              A quale casa Magica appartieni?
             </h1>
-            <div
-              style={{
-                color: "#d4d4d4",
-                flex: "1 1 50%",
-                marginTop: "40px",
-              }}
-            >
-              Don the Sorting Hat to be placed into your rightful Hogwarts
-              house. The Sorting Hat's decision is final.
-            </div>
+
             <a
               href="/step-1"
               style={{ textDecoration: "none", color: "inherit" }}
@@ -119,21 +110,9 @@ const App = () => {
           <img
             src={HP_Cappello}
             style={{
-              width: "75vw",
+              width: "90vw",
             }}
           ></img>
-          <div
-            style={{
-              color: "#d4d4d4",
-              textAlign: "center",
-              width: "80vw",
-              fontSize: "1.2em",
-              marginBottom: "5px",
-            }}
-          >
-            Don the Sorting Hat to be placed into your rightful Hogwarts house.
-            The Sorting Hat's decision is final.
-          </div>
 
           <a
             href="/step-1"
