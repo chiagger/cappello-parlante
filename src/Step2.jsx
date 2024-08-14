@@ -64,7 +64,7 @@ const Step1 = () => {
                 flex: "1 1 50%",
               }}
             >
-              Se potessi avere un potere magico, quale sceglieresti?
+              Cosa trovi più difficile?
             </h1>
             <div
               className="box"
@@ -78,12 +78,11 @@ const Step1 = () => {
                 <option value="" disabled selected hidden>
                   Seleziona una risposta
                 </option>
-                <option value="1">Leggere nella mente</option>
-                <option value="2">Cambiare il passato</option>
-                <option value="3">Invisibilità</option>
-                <option value="4">Parlare agli animali</option>
-                <option value="5">Una forza sovrumana</option>
-                <option value="6">Cambiare aspetto a piacimento</option>
+                <option value="1">Restare da soli</option>
+                <option value="2">Annoiarsi</option>
+                <option value="3">Avere molta fame</option>
+                <option value="4">Essere ignorati</option>
+                <option value="5">Sentire tanto freddo</option>
               </select>
             </div>
             <a
@@ -128,7 +127,7 @@ const Step1 = () => {
               marginBottom: "0px",
             }}
           >
-            Se potessi avere un potere magico, quale sceglieresti?
+            Cosa trovi più difficile?
           </h1>
 
           <div
@@ -143,12 +142,11 @@ const Step1 = () => {
               <option value="" disabled selected hidden>
                 Seleziona una risposta
               </option>
-              <option value="1">Leggere nella mente</option>
-              <option value="2">Cambiare il passato</option>
-              <option value="3">Invisibilità</option>
-              <option value="4">Parlare agli animali</option>
-              <option value="5">Una forza sovrumana</option>
-              <option value="6">Cambiare aspetto a piacimento</option>
+              <option value="1">Restare da soli</option>
+              <option value="2">Annoiarsi</option>
+              <option value="3">Avere molta fame</option>
+              <option value="4">Essere ignorati</option>
+              <option value="5">Sentire tanto freddo</option>
             </select>
           </div>
           <img
