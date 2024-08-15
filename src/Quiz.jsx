@@ -6,6 +6,7 @@ import Step4 from "./Step4.jsx";
 import Step5 from "./Step5.jsx";
 import Step6 from "./Step6.jsx";
 import Step7 from "./Step7.jsx";
+import Risultato from "./Risultato.jsx";
 
 const Quiz = () => {
   const { action } = useParams();
@@ -19,6 +20,7 @@ const Quiz = () => {
       {action === "step-5" && <Step5 />}
       {action === "step-6" && <Step6 />}
       {action === "step-7" && <Step7 />}
+      {action === "risultato" && <Risultato />}
     </>
   );
 };
