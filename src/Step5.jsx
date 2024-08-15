@@ -4,7 +4,7 @@ import HP_Magia from "./assets/HP_Magia.png";
 import HP_Prosegui from "./assets/HP_Prosegui.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 
-const Step4 = () => {
+const Step5 = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [displayError, setDisplayError] = useState(false);
@@ -65,7 +65,7 @@ const Step4 = () => {
                 flex: "1 1 50%",
               }}
             >
-              Quale strumento musicale ti piace di più ascoltare?
+              Che animale porteresti con te alla scuola di Magia?
             </h1>
             <div
               className="box"
@@ -79,10 +79,10 @@ const Step4 = () => {
                 <option value="" disabled selected hidden>
                   Seleziona una risposta
                 </option>
-                <option value="1">Piano</option>
-                <option value="2">Batteria</option>
-                <option value="3">Violino</option>
-                <option value="4">Tromba</option>
+                <option value="1">Gatto</option>
+                <option value="2">Gufo</option>
+                <option value="3">Rospo</option>
+                <option value="4">Topo</option>
               </select>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
@@ -94,12 +94,12 @@ const Step4 = () => {
               onClick={(e) => {
                 e.preventDefault();
                 if (selectedOption) {
-                  window.location.href = "/step-5";
+                  window.location.href = "/step-6";
                 } else {
                   setDisplayError(true);
                 }
               }}
-              href="/step-5"
+              href="/step-6"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <img
@@ -139,7 +139,7 @@ const Step4 = () => {
               marginBottom: "0px",
             }}
           >
-            Quale strumento musicale ti piace di più ascoltare?
+            Che animale porteresti con te alla scuola di Magia?
           </h1>
 
           <div
@@ -154,10 +154,10 @@ const Step4 = () => {
               <option value="" disabled selected hidden>
                 Seleziona una risposta
               </option>
-              <option value="1">Piano</option>
-              <option value="2">Batteria</option>
-              <option value="3">Violino</option>
-              <option value="4">Tromba</option>
+              <option value="1">Gatto</option>
+              <option value="2">Gufo</option>
+              <option value="3">Rospo</option>
+              <option value="4">Topo</option>
             </select>
             {displayError && (
               <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
@@ -176,12 +176,12 @@ const Step4 = () => {
             onClick={(e) => {
               e.preventDefault();
               if (selectedOption) {
-                window.location.href = "/step-5";
+                window.location.href = "/step-6";
               } else {
                 setDisplayError(true);
               }
             }}
-            href="/step-5"
+            href="/step-6"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <img
@@ -198,4 +198,4 @@ const Step4 = () => {
   );
 };
 
-export default Step4;
+export default Step5;

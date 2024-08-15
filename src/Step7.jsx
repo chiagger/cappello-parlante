@@ -4,7 +4,7 @@ import HP_Magia from "./assets/HP_Magia.png";
 import HP_Prosegui from "./assets/HP_Prosegui.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 
-const Step3 = () => {
+const Step7 = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [displayError, setDisplayError] = useState(false);
@@ -65,7 +65,7 @@ const Step3 = () => {
                 flex: "1 1 50%",
               }}
             >
-              Quale sogno da incubo ti fa più paura?
+              Quattro scatole sono davanti a te. Quale non resisti ad aprire?
             </h1>
             <div
               className="box"
@@ -99,9 +99,9 @@ const Step3 = () => {
                       checked={selectedOption === "1"}
                       onChange={handleChange}
                     />
-                    Nel sogno sei in un posto molto alto e improvvisamente ti
-                    accorgi che non c’è nessuna barriera e niente a cui
-                    aggrapparsi e quindi stai per cadere.
+                    Una scintillante scatola nera con serratura e chiave
+                    argentati, con incastonata una misteriosa runa che sai
+                    essere il marchio di Mago Merlino.
                   </div>
                   <div
                     style={{
@@ -118,9 +118,8 @@ const Step3 = () => {
                       checked={selectedOption === "2"}
                       onChange={handleChange}
                     />
-                    Nel sogno stai parlando con una voce stridula e stupida,
-                    quasi nessuno riesce a capire quello che dici e tutti ti
-                    prendono in giro.
+                    Una piccola scatola di peltro, semplice e senza pretese, con
+                    una targhetta che dice "Mi apro solo per chi ne è degno".
                   </div>
                   <div
                     style={{
@@ -137,9 +136,9 @@ const Step3 = () => {
                       checked={selectedOption === "3"}
                       onChange={handleChange}
                     />
-                    Nel sogno ti svegli e scopri che la tua famiglia e i tuoi
-                    amici non ti riconoscono e in verità non sanno nemmeno chi
-                    sei.
+                    Una piccola scatola a forma di tartaruga con il bordo
+                    dorato, all'interno della quale sembra “strillare” qualche
+                    piccola creatura.
                   </div>
                   <div
                     style={{
@@ -156,9 +155,9 @@ const Step3 = () => {
                       checked={selectedOption === "4"}
                       onChange={handleChange}
                     />
-                    Nel sogno sei rinchiuso in una stanza buia e senza finestre
-                    e vedi un occhio che ti fissa attraverso il lucchetto della
-                    porta.
+                    Uno scrigno d’oro con piedi a forma di artiglio, con inciso
+                    sopra un messaggio che avverte che al suo interno si trovano
+                    sia la conoscenza segreta che una tentazione insopportabile.
                   </div>
                 </fieldset>
               </form>
@@ -173,12 +172,12 @@ const Step3 = () => {
               onClick={(e) => {
                 e.preventDefault();
                 if (selectedOption) {
-                  window.location.href = "/step-4";
+                  window.location.href = "/risultato";
                 } else {
                   setDisplayError(true);
                 }
               }}
-              href="/step-4"
+              href="/risultato"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <img
@@ -218,7 +217,7 @@ const Step3 = () => {
               marginBottom: "0px",
             }}
           >
-            Quale sogno da incubo ti fa più paura?
+            Quattro scatole sono davanti a te. Quale non resisti ad aprire?
           </h1>
 
           <div
@@ -253,9 +252,9 @@ const Step3 = () => {
                     checked={selectedOption === "1"}
                     onChange={handleChange}
                   />
-                  Nel sogno sei in un posto molto alto e improvvisamente ti
-                  accorgi che non c’è nessuna barriera e niente a cui
-                  aggrapparsi e quindi stai per cadere.
+                  Una scintillante scatola nera con serratura e chiave
+                  argentati, con incastonata una misteriosa runa che sai essere
+                  il marchio di Mago Merlino.
                 </div>
                 <div
                   style={{
@@ -272,9 +271,8 @@ const Step3 = () => {
                     checked={selectedOption === "2"}
                     onChange={handleChange}
                   />
-                  Nel sogno stai parlando con una voce stridula e stupida, quasi
-                  nessuno riesce a capire quello che dici e tutti ti prendono in
-                  giro.
+                  Una piccola scatola di peltro, semplice e senza pretese, con
+                  una targhetta che dice "Mi apro solo per chi ne è degno".
                 </div>
                 <div
                   style={{
@@ -291,9 +289,9 @@ const Step3 = () => {
                     checked={selectedOption === "3"}
                     onChange={handleChange}
                   />
-                  Nel sogno ti svegli e scopri che la tua famiglia e i tuoi
-                  amici non ti riconoscono e in verità non sanno nemmeno chi
-                  sei.
+                  Una piccola scatola a forma di tartaruga con il bordo dorato,
+                  all'interno della quale sembra “strillare” qualche piccola
+                  creatura.
                 </div>
                 <div
                   style={{
@@ -310,9 +308,9 @@ const Step3 = () => {
                     checked={selectedOption === "4"}
                     onChange={handleChange}
                   />
-                  Nel sogno sei rinchiuso in una stanza buia e senza finestre e
-                  vedi un occhio che ti fissa attraverso il lucchetto della
-                  porta.
+                  Uno scrigno d’oro con piedi a forma di artiglio, con inciso
+                  sopra un messaggio che avverte che al suo interno si trovano
+                  sia la conoscenza segreta che una tentazione insopportabile.
                 </div>
               </fieldset>
             </form>
@@ -333,12 +331,12 @@ const Step3 = () => {
             onClick={(e) => {
               e.preventDefault();
               if (selectedOption) {
-                window.location.href = "/step-4";
+                window.location.href = "/risultato";
               } else {
                 setDisplayError(true);
               }
             }}
-            href="/step-4"
+            href="/risultato"
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <img
@@ -355,4 +353,4 @@ const Step3 = () => {
   );
 };
 
-export default Step3;
+export default Step7;
