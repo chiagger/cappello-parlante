@@ -7,9 +7,13 @@ import HP_Grifondoro from "./assets/HP_Grifondoro.png";
 
 const Risultato = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
-  const [displayError, setDisplayError] = useState(false);
+  const [results, setResults] = useState([]);
+  const [result, setResult] = useState(undefined);
+  const [score, setScore] = useState(
+    JSON.parse(localStorage.getItem("score")) || { g: 0, s: 0, c: 0, t: 0 }
+  );
 
+  console.log(result);
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 769);
@@ -22,6 +26,27 @@ const Risultato = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    if (score) {
+      const maxScore = Math.max(...Object.values(score));
+      const highest = Object.keys(score).filter(
+        (key) => score[key] === maxScore
+      );
+      setResults(highest);
+    }
+  }, [score]);
+
+  useEffect(() => {
+    if (results) {
+      if (results.length === 1) {
+        setResult(results[0]);
+      } else {
+        const randomIndex = Math.floor(Math.random() * results.length);
+        setResult(results[randomIndex]);
+      }
+    }
+  }, [results]);
 
   const handleChange = (event) => {
     setDisplayError(false);
