@@ -9,6 +9,10 @@ const App = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    localStorage.setItem("score", JSON.stringify({ g: 0, s: 0, c: 0, t: 0 }));
+  }, []);
+
+  useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 769);
     }

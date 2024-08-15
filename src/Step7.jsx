@@ -8,6 +8,9 @@ const Step7 = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
   const [displayError, setDisplayError] = useState(false);
+  const [score, setScore] = useState(
+    JSON.parse(localStorage.getItem("score")) || { g: 0, s: 0, c: 0, t: 0 }
+  );
 
   useEffect(() => {
     function handleResize() {
@@ -172,6 +175,50 @@ const Step7 = () => {
               onClick={(e) => {
                 e.preventDefault();
                 if (selectedOption) {
+                  if (selectedOption === "1") {
+                    localStorage.setItem(
+                      "score",
+                      JSON.stringify({
+                        g: score.g,
+                        s: score.s,
+                        c: score.c + 1,
+                        t: score.t,
+                      })
+                    );
+                  }
+                  if (selectedOption === "2") {
+                    localStorage.setItem(
+                      "score",
+                      JSON.stringify({
+                        g: score.g + 1,
+                        s: score.s,
+                        c: score.c + 1,
+                        t: score.t,
+                      })
+                    );
+                  }
+                  if (selectedOption === "3") {
+                    localStorage.setItem(
+                      "score",
+                      JSON.stringify({
+                        g: score.g,
+                        s: score.s,
+                        c: score.c,
+                        t: score.t + 1,
+                      })
+                    );
+                  }
+                  if (selectedOption === "4") {
+                    localStorage.setItem(
+                      "score",
+                      JSON.stringify({
+                        g: score.g,
+                        s: score.s + 1,
+                        c: score.c,
+                        t: score.t,
+                      })
+                    );
+                  }
                   window.location.href = "/risultato";
                 } else {
                   setDisplayError(true);
@@ -331,6 +378,50 @@ const Step7 = () => {
             onClick={(e) => {
               e.preventDefault();
               if (selectedOption) {
+                if (selectedOption === "1") {
+                  localStorage.setItem(
+                    "score",
+                    JSON.stringify({
+                      g: score.g,
+                      s: score.s,
+                      c: score.c + 1,
+                      t: score.t,
+                    })
+                  );
+                }
+                if (selectedOption === "2") {
+                  localStorage.setItem(
+                    "score",
+                    JSON.stringify({
+                      g: score.g + 1,
+                      s: score.s,
+                      c: score.c + 1,
+                      t: score.t,
+                    })
+                  );
+                }
+                if (selectedOption === "3") {
+                  localStorage.setItem(
+                    "score",
+                    JSON.stringify({
+                      g: score.g,
+                      s: score.s,
+                      c: score.c,
+                      t: score.t + 1,
+                    })
+                  );
+                }
+                if (selectedOption === "4") {
+                  localStorage.setItem(
+                    "score",
+                    JSON.stringify({
+                      g: score.g,
+                      s: score.s + 1,
+                      c: score.c,
+                      t: score.t,
+                    })
+                  );
+                }
                 window.location.href = "/risultato";
               } else {
                 setDisplayError(true);
