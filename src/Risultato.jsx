@@ -4,6 +4,9 @@ import HP_Magia from "./assets/HP_Magia.png";
 import HP_Prosegui from "./assets/HP_Prosegui.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 import HP_Grifondoro from "./assets/HP_Grifondoro.png";
+import HP_Corvonero from "./assets/HP_Corvonero.png";
+import HP_Serpeverde from "./assets/HP_Serpeverde.png";
+import HP_Tassorosso from "./assets/HP_Tassorosso.png";
 
 const Risultato = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -106,12 +109,46 @@ const Risultato = () => {
               }}
             >
               <img
-                src={HP_Grifondoro}
+                src={
+                  result === "c"
+                    ? HP_Corvonero
+                    : result === "g"
+                    ? HP_Grifondoro
+                    : result === "s"
+                    ? HP_Serpeverde
+                    : HP_Tassorosso
+                }
                 style={{
-                  width: "50vw",
+                  width: "40vw",
                 }}
               ></img>
             </a>
+            <h3
+              className="title"
+              style={{
+                color: "#d4d4d4",
+              }}
+            >
+              👉Prima di iniziare - per giocare in sicurezza - bisogna essere
+              collegati con le credenziali (username e password) create al primo
+              accesso. Non l’hai ancora fatto?{" "}
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  
+                  window.open(
+                    "https://bambiniegenitori.it/registrati/",
+                    "_blank"
+                  );
+                }}
+                style={{
+                  color: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                <u>Registrati</u>
+              </a>
+            </h3>
           </div>
         </div>
       )}
@@ -164,7 +201,15 @@ const Risultato = () => {
             }}
           >
             <img
-              src={HP_Grifondoro}
+              src={
+                result === "c"
+                  ? HP_Corvonero
+                  : result === "g"
+                  ? HP_Grifondoro
+                  : result === "s"
+                  ? HP_Serpeverde
+                  : HP_Tassorosso
+              }
               style={{
                 width: "90vw",
               }}
