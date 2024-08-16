@@ -71,7 +71,6 @@ const Risultato = () => {
             style={{
               textAlign: "center",
               width: "80vw",
-              marginBottom: "20vh",
             }}
           >
             <img
@@ -100,7 +99,18 @@ const Risultato = () => {
             <a
               onClick={(e) => {
                 e.preventDefault();
-                window.open("https://bambiniegenitori.it", "_blank");
+                window.open(
+                  `${
+                    result === "c"
+                      ? "https://bambiniegenitori.it/J182UZWQU"
+                      : result === "g"
+                      ? "https://bambiniegenitori.it/VL94FPCZA"
+                      : result === "s"
+                      ? "https://bambiniegenitori.it/A71ERTX3E"
+                      : "https://bambiniegenitori.it/59SPXUDEJ"
+                  }`,
+                  "_blank"
+                );
               }}
               style={{
                 textDecoration: "none",
@@ -123,21 +133,19 @@ const Risultato = () => {
                 }}
               ></img>
             </a>
-            <h3
+            <h4
               className="title"
               style={{
                 color: "#d4d4d4",
               }}
             >
-              👉Prima di iniziare - per giocare in sicurezza - bisogna essere
-              collegati con le credenziali (username e password) create al primo
-              accesso. Non l’hai ancora fatto?{" "}
+              Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
               <a
                 onClick={(e) => {
                   e.preventDefault();
-                  
+
                   window.open(
-                    "https://bambiniegenitori.it/registrati/",
+                    "https://bambiniegenitori.it/portalimagici",
                     "_blank"
                   );
                 }}
@@ -146,9 +154,58 @@ const Risultato = () => {
                   cursor: "pointer",
                 }}
               >
-                <u>Registrati</u>
+                <u>Qui</u>
               </a>
-            </h3>
+            </h4>
+            <div
+              style={{
+                border: "1px solid white",
+                margin: "5%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <h3
+                className="title"
+                style={{
+                  color: "#d4d4d4",
+                }}
+              >
+                👉Prima di iniziare - per giocare in sicurezza - bisogna essere
+                collegati con le credenziali (username e password) create al
+                primo accesso. Non l’hai ancora fatto?{" "}
+                <a
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    window.open(
+                      "https://bambiniegenitori.it/registrati/",
+                      "_blank"
+                    );
+                  }}
+                  style={{
+                    color: "inherit",
+                    cursor: "pointer",
+                  }}
+                >
+                  <u>Registrati</u>
+                </a>
+              </h3>
+            </div>
+            <div
+              style={{
+                width: "100%",
+                textAlign: "center",
+                color: "#d4d4d4",
+                fontSize: "0.9em",
+                lineHeight: "1.2",
+              }}
+            >
+              © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 -
+              Privacy e Policy consultabili su:{" "}
+              <u>https://bambiniegenitori.it</u>
+            </div>
           </div>
         </div>
       )}
@@ -192,7 +249,18 @@ const Risultato = () => {
           <a
             onClick={(e) => {
               e.preventDefault();
-              window.open("https://bambiniegenitori.it", "_blank");
+              window.open(
+                `${
+                  result === "c"
+                    ? "https://bambiniegenitori.it/J182UZWQU"
+                    : result === "g"
+                    ? "https://bambiniegenitori.it/VL94FPCZA"
+                    : result === "s"
+                    ? "https://bambiniegenitori.it/A71ERTX3E"
+                    : "https://bambiniegenitori.it/59SPXUDEJ"
+                }`,
+                "_blank"
+              );
             }}
             style={{
               textDecoration: "none",
@@ -215,6 +283,82 @@ const Risultato = () => {
               }}
             ></img>
           </a>
+          <h4
+            className="title"
+            style={{
+              color: "#d4d4d4",
+              textAlign: "center",
+              width: "90%",
+            }}
+          >
+            Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+
+                window.open(
+                  "https://bambiniegenitori.it/portalimagici",
+                  "_blank"
+                );
+              }}
+              style={{
+                color: "inherit",
+                cursor: "pointer",
+              }}
+            >
+              <u>Qui</u>
+            </a>
+          </h4>
+          <div
+            style={{
+              border: "1px solid white",
+              margin: "5%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <h3
+              className="title"
+              style={{
+                color: "#d4d4d4",
+                textAlign: "center",
+                width: "90%",
+              }}
+            >
+              👉Prima di iniziare - per giocare in sicurezza - bisogna essere
+              collegati con le credenziali (username e password) create al primo
+              accesso. Non l’hai ancora fatto?{" "}
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+
+                  window.open(
+                    "https://bambiniegenitori.it/registrati/",
+                    "_blank"
+                  );
+                }}
+                style={{
+                  color: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                <u>Registrati</u>
+              </a>
+            </h3>
+          </div>
+          <div
+            style={{
+              width: "100%",
+              textAlign: "center",
+              color: "#d4d4d4",
+              fontSize: "0.9em",
+              lineHeight: "1.2",
+            }}
+          >
+            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
+          </div>
         </div>
       )}
     </>

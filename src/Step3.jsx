@@ -36,40 +36,267 @@ const Step3 = () => {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            flexWrap: "nowrap",
           }}
         >
-          <img
-            src={HP_Cappello}
-            style={{
-              width: "40vw",
-              marginTop: "20px",
-            }}
-          ></img>
           <div
             style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "nowrap",
+            }}
+          >
+            <img
+              src={HP_Cappello}
+              style={{
+                width: "40vw",
+                marginTop: "20px",
+              }}
+            ></img>
+            <div
+              style={{
+                textAlign: "center",
+                width: "45vw",
+                marginBottom: "20vh",
+              }}
+            >
+              <img
+                src={HP_Magia}
+                style={{
+                  width: "30vw",
+                }}
+              ></img>
+              <h1
+                className="title"
+                style={{
+                  color: "#d4d4d4",
+                  flex: "1 1 50%",
+                }}
+              >
+                Quale sogno da incubo ti fa più paura?
+              </h1>
+              <div
+                className="box"
+                style={{
+                  color: "#d4d4d4",
+                  flex: "1 1 50%",
+                  marginTop: "40px",
+                }}
+              >
+                <form action="">
+                  <fieldset
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "20px",
+                    }}
+                  >
+                    <legend>Seleziona una risposta</legend>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="1"
+                        checked={selectedOption === "1"}
+                        onChange={handleChange}
+                      />
+                      Nel sogno sei in un posto molto alto e improvvisamente ti
+                      accorgi che non c’è nessuna barriera e niente a cui
+                      aggrapparsi e quindi stai per cadere.
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="2"
+                        checked={selectedOption === "2"}
+                        onChange={handleChange}
+                      />
+                      Nel sogno stai parlando con una voce stridula e stupida,
+                      quasi nessuno riesce a capire quello che dici e tutti ti
+                      prendono in giro.
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="3"
+                        checked={selectedOption === "3"}
+                        onChange={handleChange}
+                      />
+                      Nel sogno ti svegli e scopri che la tua famiglia e i tuoi
+                      amici non ti riconoscono e in verità non sanno nemmeno chi
+                      sei.
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="4"
+                        checked={selectedOption === "4"}
+                        onChange={handleChange}
+                      />
+                      Nel sogno sei rinchiuso in una stanza buia e senza
+                      finestre e vedi un occhio che ti fissa attraverso il
+                      lucchetto della porta.
+                    </div>
+                  </fieldset>
+                </form>
+
+                {displayError && (
+                  <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
+                    Seleziona una risposta per proseguire
+                  </div>
+                )}
+              </div>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (selectedOption) {
+                    if (selectedOption === "1") {
+                      localStorage.setItem(
+                        "score",
+                        JSON.stringify({
+                          g: score.g,
+                          s: score.s,
+                          c: score.c,
+                          t: score.t + 1,
+                        })
+                      );
+                    }
+                    if (selectedOption === "2") {
+                      localStorage.setItem(
+                        "score",
+                        JSON.stringify({
+                          g: score.g,
+                          s: score.s,
+                          c: score.c + 1,
+                          t: score.t,
+                        })
+                      );
+                    }
+                    if (selectedOption === "3") {
+                      localStorage.setItem(
+                        "score",
+                        JSON.stringify({
+                          g: score.g + 1,
+                          s: score.s,
+                          c: score.c,
+                          t: score.t,
+                        })
+                      );
+                    }
+                    if (selectedOption === "4") {
+                      localStorage.setItem(
+                        "score",
+                        JSON.stringify({
+                          g: score.g,
+                          s: score.s + 1,
+                          c: score.c,
+                          t: score.t,
+                        })
+                      );
+                    }
+                    window.location.href = "/step-4";
+                  } else {
+                    setDisplayError(true);
+                  }
+                }}
+                href="/step-4"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <img
+                  src={HP_Prosegui}
+                  style={{
+                    width: "200px",
+                    marginTop: "20px",
+                  }}
+                ></img>
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              width: "80%",
               textAlign: "center",
-              width: "45vw",
-              marginBottom: "20vh",
+              color: "#d4d4d4",
+              fontSize: "0.7em",
+              lineHeight: "1.2",
+            }}
+          >
+            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
+          </div>
+        </div>
+      )}
+      {isMobile && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "nowrap",
             }}
           >
             <img
               src={HP_Magia}
               style={{
-                width: "30vw",
+                width: "70vw",
               }}
             ></img>
             <h1
               className="title"
               style={{
                 color: "#d4d4d4",
-                flex: "1 1 50%",
+                width: "90vw",
+                textAlign: "center",
+                fontSize: "2em",
+                marginBottom: "0px",
               }}
             >
               Quale sogno da incubo ti fa più paura?
             </h1>
+
             <div
               className="box"
               style={{
@@ -165,13 +392,19 @@ const Step3 = () => {
                   </div>
                 </fieldset>
               </form>
-
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                   Seleziona una risposta per proseguire
                 </div>
               )}
             </div>
+            <img
+              src={HP_Cappello}
+              style={{
+                width: "90vw",
+              }}
+            ></img>
+
             <a
               onClick={(e) => {
                 e.preventDefault();
@@ -220,6 +453,7 @@ const Step3 = () => {
                       })
                     );
                   }
+
                   window.location.href = "/step-4";
                 } else {
                   setDisplayError(true);
@@ -231,216 +465,24 @@ const Step3 = () => {
               <img
                 src={HP_Prosegui}
                 style={{
-                  width: "200px",
-                  marginTop: "20px",
+                  width: "70vw",
+                  marginTop: "10px",
                 }}
               ></img>
             </a>
           </div>
-        </div>
-      )}
-      {isMobile && (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "nowrap",
-          }}
-        >
-          <img
-            src={HP_Magia}
-            style={{
-              width: "70vw",
-            }}
-          ></img>
-          <h1
-            className="title"
-            style={{
-              color: "#d4d4d4",
-              width: "90vw",
-              textAlign: "center",
-              fontSize: "2em",
-              marginBottom: "0px",
-            }}
-          >
-            Quale sogno da incubo ti fa più paura?
-          </h1>
-
           <div
-            className="box"
             style={{
+              width: "90%",
+              textAlign: "center",
               color: "#d4d4d4",
-              flex: "1 1 50%",
-              marginTop: "40px",
+              fontSize: "0.7em",
+              lineHeight: "1.2",
             }}
           >
-            <form action="">
-              <fieldset
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "20px",
-                }}
-              >
-                <legend>Seleziona una risposta</legend>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "start",
-                    gap: "1vw",
-                  }}
-                >
-                  <input
-                    type="radio"
-                    name="linguaggio"
-                    value="1"
-                    checked={selectedOption === "1"}
-                    onChange={handleChange}
-                  />
-                  Nel sogno sei in un posto molto alto e improvvisamente ti
-                  accorgi che non c’è nessuna barriera e niente a cui
-                  aggrapparsi e quindi stai per cadere.
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "start",
-                    gap: "1vw",
-                  }}
-                >
-                  <input
-                    type="radio"
-                    name="linguaggio"
-                    value="2"
-                    checked={selectedOption === "2"}
-                    onChange={handleChange}
-                  />
-                  Nel sogno stai parlando con una voce stridula e stupida, quasi
-                  nessuno riesce a capire quello che dici e tutti ti prendono in
-                  giro.
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "start",
-                    gap: "1vw",
-                  }}
-                >
-                  <input
-                    type="radio"
-                    name="linguaggio"
-                    value="3"
-                    checked={selectedOption === "3"}
-                    onChange={handleChange}
-                  />
-                  Nel sogno ti svegli e scopri che la tua famiglia e i tuoi
-                  amici non ti riconoscono e in verità non sanno nemmeno chi
-                  sei.
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "start",
-                    gap: "1vw",
-                  }}
-                >
-                  <input
-                    type="radio"
-                    name="linguaggio"
-                    value="4"
-                    checked={selectedOption === "4"}
-                    onChange={handleChange}
-                  />
-                  Nel sogno sei rinchiuso in una stanza buia e senza finestre e
-                  vedi un occhio che ti fissa attraverso il lucchetto della
-                  porta.
-                </div>
-              </fieldset>
-            </form>
-            {displayError && (
-              <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                Seleziona una risposta per proseguire
-              </div>
-            )}
+            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
           </div>
-          <img
-            src={HP_Cappello}
-            style={{
-              width: "90vw",
-            }}
-          ></img>
-
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              if (selectedOption) {
-                if (selectedOption === "1") {
-                  localStorage.setItem(
-                    "score",
-                    JSON.stringify({
-                      g: score.g,
-                      s: score.s,
-                      c: score.c,
-                      t: score.t + 1,
-                    })
-                  );
-                }
-                if (selectedOption === "2") {
-                  localStorage.setItem(
-                    "score",
-                    JSON.stringify({
-                      g: score.g,
-                      s: score.s,
-                      c: score.c + 1,
-                      t: score.t,
-                    })
-                  );
-                }
-                if (selectedOption === "3") {
-                  localStorage.setItem(
-                    "score",
-                    JSON.stringify({
-                      g: score.g + 1,
-                      s: score.s,
-                      c: score.c,
-                      t: score.t,
-                    })
-                  );
-                }
-                if (selectedOption === "4") {
-                  localStorage.setItem(
-                    "score",
-                    JSON.stringify({
-                      g: score.g,
-                      s: score.s + 1,
-                      c: score.c,
-                      t: score.t,
-                    })
-                  );
-                }
-
-                window.location.href = "/step-4";
-              } else {
-                setDisplayError(true);
-              }
-            }}
-            href="/step-4"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <img
-              src={HP_Prosegui}
-              style={{
-                width: "70vw",
-                marginTop: "10px",
-              }}
-            ></img>
-          </a>
         </div>
       )}
     </>

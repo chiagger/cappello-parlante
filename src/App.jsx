@@ -31,54 +31,77 @@ const App = () => {
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            flexWrap: "nowrap",
-            gap: "7vw",
           }}
         >
-          <img
-            src={HP_Cappello}
-            style={{
-              width: "40vw",
-              marginTop: "20px",
-            }}
-          ></img>
           <div
             style={{
-              textAlign: "center",
-              width: "45vw",
-              marginBottom: "20vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "nowrap",
+              gap: "7vw",
             }}
           >
             <img
-              src={HP_Magia}
+              src={HP_Cappello}
               style={{
-                width: "30vw",
+                width: "40vw",
+                marginTop: "20px",
               }}
             ></img>
-            <h1
-              className="title"
+            <div
               style={{
-                color: "#d4d4d4",
-                flex: "1 1 50%",
+                textAlign: "center",
+                width: "45vw",
+                marginBottom: "20vh",
               }}
             >
-              A quale casa Magica appartieni?
-            </h1>
-
-            <a
-              href="/step-1"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
               <img
-                src={HP_Inizia}
+                src={HP_Magia}
                 style={{
-                  width: "200px",
-                  marginTop: "20px",
+                  width: "30vw",
                 }}
               ></img>
-            </a>
+              <h1
+                className="title"
+                style={{
+                  color: "#d4d4d4",
+                  flex: "1 1 50%",
+                }}
+              >
+                A quale casa Magica appartieni?
+              </h1>
+
+              <a
+                href="/step-1"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <img
+                  src={HP_Inizia}
+                  style={{
+                    width: "200px",
+                    marginTop: "20px",
+                  }}
+                ></img>
+              </a>
+            </div>
+          </div>
+          <div
+            style={{
+              width: "80%",
+              textAlign: "center",
+              color: "#d4d4d4",
+              fontSize: "0.7em",
+              lineHeight: "1.2",
+              position: "absolute",
+              bottom: "0",
+            }}
+          >
+            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
           </div>
         </div>
       )}
@@ -130,6 +153,20 @@ const App = () => {
               }}
             ></img>
           </a>
+          <div
+            style={{
+              width: "80%",
+              textAlign: "center",
+              color: "#d4d4d4",
+              fontSize: "0.7em",
+              lineHeight: "1.2",
+              position: "absolute",
+              bottom: "0",
+            }}
+          >
+            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
+          </div>
         </div>
       )}
     </>
