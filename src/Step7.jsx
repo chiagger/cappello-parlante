@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import HP_Magia from "./assets/HP_Magia.png";
-import HP_Prosegui from "./assets/HP_Prosegui.png";
+import HP_Risultato from "./assets/HP_Risultato.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 
 const Step7 = () => {
@@ -238,7 +238,7 @@ const Step7 = () => {
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <img
-                  src={HP_Prosegui}
+                  src={HP_Risultato}
                   style={{
                     width: "200px",
                     marginTop: "20px",
@@ -462,7 +462,7 @@ const Step7 = () => {
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <img
-                src={HP_Prosegui}
+                src={HP_Risultato}
                 style={{
                   width: "70vw",
                   marginTop: "10px",
