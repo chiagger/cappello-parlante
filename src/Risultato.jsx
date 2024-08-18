@@ -86,36 +86,14 @@ const Risultato = () => {
                 flex: "1 1 50%",
               }}
             >
-              Tu appartieni a
+              Tu appartieni a:
             </h1>
             <div
-              className="box"
               style={{
-                color: "#d4d4d4",
-                flex: "1 1 50%",
-                marginTop: "40px",
-              }}
-            ></div>
-            <a
-              onClick={(e) => {
-                e.preventDefault();
-                window.open(
-                  `${
-                    result === "c"
-                      ? "https://bambiniegenitori.it/J182UZWQU"
-                      : result === "g"
-                      ? "https://bambiniegenitori.it/VL94FPCZA"
-                      : result === "s"
-                      ? "https://bambiniegenitori.it/A71ERTX3E"
-                      : "https://bambiniegenitori.it/59SPXUDEJ"
-                  }`,
-                  "_blank"
-                );
-              }}
-              style={{
-                textDecoration: "none",
-                color: "inherit",
-                cursor: "pointer",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               <img
@@ -132,20 +110,58 @@ const Risultato = () => {
                   width: "40vw",
                 }}
               ></img>
-            </a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    `${
+                      result === "c"
+                        ? "https://bambiniegenitori.it/J182UZWQU"
+                        : result === "g"
+                        ? "https://bambiniegenitori.it/VL94FPCZA"
+                        : result === "s"
+                        ? "https://bambiniegenitori.it/A71ERTX3E"
+                        : "https://bambiniegenitori.it/59SPXUDEJ"
+                    }`,
+                    "_blank"
+                  );
+                }}
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                <img
+                  src={HP_Prosegui}
+                  style={{
+                    width: "200px",
+                    marginTop: "20px",
+                  }}
+                ></img>
+              </a>
+            </div>
             <h4
               className="title"
               style={{
                 color: "#d4d4d4",
               }}
             >
-              Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+              Oppure digita:{" "}
               <a
                 onClick={(e) => {
                   e.preventDefault();
 
                   window.open(
-                    "https://bambiniegenitori.it/portalimagici",
+                    `${
+                      result === "c"
+                        ? "https://bambiniegenitori.it/J182UZWQU"
+                        : result === "g"
+                        ? "https://bambiniegenitori.it/VL94FPCZA"
+                        : result === "s"
+                        ? "https://bambiniegenitori.it/A71ERTX3E"
+                        : "https://bambiniegenitori.it/59SPXUDEJ"
+                    }`,
                     "_blank"
                   );
                 }}
@@ -154,9 +170,18 @@ const Risultato = () => {
                   cursor: "pointer",
                 }}
               >
-                <u>Qui</u>
+                <u>
+                  {result === "c"
+                    ? "bambiniegenitori.it/J182UZWQU"
+                    : result === "g"
+                    ? "bambiniegenitori.it/VL94FPCZA"
+                    : result === "s"
+                    ? "bambiniegenitori.it/A71ERTX3E"
+                    : "bambiniegenitori.it/59SPXUDEJ"}
+                </u>
               </a>
             </h4>
+
             <div
               style={{
                 border: "1px solid white",
@@ -164,6 +189,7 @@ const Risultato = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                marginBottom: "10px",
               }}
             >
               <h3
@@ -193,6 +219,31 @@ const Risultato = () => {
                 </a>
               </h3>
             </div>
+            <h4
+              className="title"
+              style={{
+                color: "#d4d4d4",
+                marginBottom: "50px",
+              }}
+            >
+              Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+
+                  window.open(
+                    "https://bambiniegenitori.it/portalimagici",
+                    "_blank"
+                  );
+                }}
+                style={{
+                  color: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                <u>Qui</u>
+              </a>
+            </h4>
             <div
               style={{
                 width: "100%",
@@ -241,37 +292,15 @@ const Risultato = () => {
               marginBottom: "0px",
             }}
           >
-            Tu appartieni a
+            Tu appartieni a:
           </h1>
 
           <div
-            className="box"
             style={{
-              color: "#d4d4d4",
-              flex: "1 1 50%",
-              marginTop: "40px",
-            }}
-          ></div>
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              window.open(
-                `${
-                  result === "c"
-                    ? "https://bambiniegenitori.it/J182UZWQU"
-                    : result === "g"
-                    ? "https://bambiniegenitori.it/VL94FPCZA"
-                    : result === "s"
-                    ? "https://bambiniegenitori.it/A71ERTX3E"
-                    : "https://bambiniegenitori.it/59SPXUDEJ"
-                }`,
-                "_blank"
-              );
-            }}
-            style={{
-              textDecoration: "none",
-              color: "inherit",
-              cursor: "pointer",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <img
@@ -285,25 +314,61 @@ const Risultato = () => {
                   : HP_Tassorosso
               }
               style={{
-                width: "90vw",
+                width: "100vw",
               }}
             ></img>
-          </a>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  `${
+                    result === "c"
+                      ? "https://bambiniegenitori.it/J182UZWQU"
+                      : result === "g"
+                      ? "https://bambiniegenitori.it/VL94FPCZA"
+                      : result === "s"
+                      ? "https://bambiniegenitori.it/A71ERTX3E"
+                      : "https://bambiniegenitori.it/59SPXUDEJ"
+                  }`,
+                  "_blank"
+                );
+              }}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                cursor: "pointer",
+              }}
+            >
+              <img
+                src={HP_Prosegui}
+                style={{
+                  width: "200px",
+                  marginTop: "20px",
+                }}
+              ></img>
+            </a>
+          </div>
           <h4
             className="title"
             style={{
               color: "#d4d4d4",
-              textAlign: "center",
-              width: "90%",
             }}
           >
-            Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+            Oppure digita:{" "}
             <a
               onClick={(e) => {
                 e.preventDefault();
 
                 window.open(
-                  "https://bambiniegenitori.it/portalimagici",
+                  `${
+                    result === "c"
+                      ? "https://bambiniegenitori.it/J182UZWQU"
+                      : result === "g"
+                      ? "https://bambiniegenitori.it/VL94FPCZA"
+                      : result === "s"
+                      ? "https://bambiniegenitori.it/A71ERTX3E"
+                      : "https://bambiniegenitori.it/59SPXUDEJ"
+                  }`,
                   "_blank"
                 );
               }}
@@ -312,9 +377,18 @@ const Risultato = () => {
                 cursor: "pointer",
               }}
             >
-              <u>Qui</u>
+              <u>
+                {result === "c"
+                  ? "bambiniegenitori.it/J182UZWQU"
+                  : result === "g"
+                  ? "bambiniegenitori.it/VL94FPCZA"
+                  : result === "s"
+                  ? "bambiniegenitori.it/A71ERTX3E"
+                  : "bambiniegenitori.it/59SPXUDEJ"}
+              </u>
             </a>
           </h4>
+
           <div
             style={{
               border: "1px solid white",
@@ -353,6 +427,33 @@ const Risultato = () => {
               </a>
             </h3>
           </div>
+          <h4
+            className="title"
+            style={{
+              color: "#d4d4d4",
+              textAlign: "center",
+              width: "90%",
+              marginTop: "0",
+            }}
+          >
+            Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+
+                window.open(
+                  "https://bambiniegenitori.it/portalimagici",
+                  "_blank"
+                );
+              }}
+              style={{
+                color: "inherit",
+                cursor: "pointer",
+              }}
+            >
+              <u>Qui</u>
+            </a>
+          </h4>
           <div
             style={{
               width: "100%",
