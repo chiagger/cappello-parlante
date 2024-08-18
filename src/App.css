@@ -25,6 +25,10 @@ body,
   font-style: normal;
 }
 
+legend {
+  font-family: "Abril Fatface", serif;
+}
+
 body {
   margin: 0;
   padding: 0;

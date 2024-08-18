@@ -89,7 +89,7 @@ const Step6 = () => {
               >
                 <select required value={selectedOption} onChange={handleChange}>
                   <option value="" disabled selected hidden>
-                    Seleziona una risposta
+                    Scegli una risposta
                   </option>
                   <option value="1">Centauri</option>
                   <option value="2">Lupi Mannari</option>
@@ -100,7 +100,7 @@ const Step6 = () => {
                 </select>
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                    Seleziona una risposta per proseguire
+                    Scegli una risposta per proseguire
                   </div>
                 )}
               </div>
@@ -263,7 +263,7 @@ const Step6 = () => {
             >
               <select required value={selectedOption} onChange={handleChange}>
                 <option value="" disabled selected hidden>
-                  Seleziona una risposta
+                  Scegli una risposta
                 </option>
                 <option value="1">Centauri</option>
                 <option value="2">Lupi Mannari</option>
@@ -274,7 +274,7 @@ const Step6 = () => {
               </select>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                  Seleziona una risposta per proseguire
+                  Scegli una risposta per proseguire
                 </div>
               )}
             </div>

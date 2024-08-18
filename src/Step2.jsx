@@ -88,7 +88,7 @@ const Step2 = () => {
               >
                 <select required value={selectedOption} onChange={handleChange}>
                   <option value="" disabled selected hidden>
-                    Seleziona una risposta
+                    Scegli una risposta
                   </option>
                   <option value="1">Restare da soli</option>
                   <option value="2">Annoiarsi</option>
@@ -98,7 +98,7 @@ const Step2 = () => {
                 </select>
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                    Seleziona una risposta per proseguire
+                    Scegli una risposta per proseguire
                   </div>
                 )}
               </div>
@@ -249,7 +249,7 @@ const Step2 = () => {
             >
               <select required value={selectedOption} onChange={handleChange}>
                 <option value="" disabled selected hidden>
-                  Seleziona una risposta
+                  Scegli una risposta
                 </option>
                 <option value="1">Restare da soli</option>
                 <option value="2">Annoiarsi</option>
@@ -259,7 +259,7 @@ const Step2 = () => {
               </select>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                  Seleziona una risposta per proseguire
+                  Scegli una risposta per proseguire
                 </div>
               )}
             </div>

@@ -94,7 +94,7 @@ const Step3 = () => {
                       gap: "20px",
                     }}
                   >
-                    <legend>Seleziona una risposta</legend>
+                    <legend>Scegli una risposta</legend>
                     <div
                       style={{
                         display: "flex",
@@ -176,7 +176,7 @@ const Step3 = () => {
 
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                    Seleziona una risposta per proseguire
+                    Scegli una risposta per proseguire
                   </div>
                 )}
               </div>
@@ -320,7 +320,7 @@ const Step3 = () => {
                     gap: "20px",
                   }}
                 >
-                  <legend>Seleziona una risposta</legend>
+                  <legend>Scegli una risposta</legend>
                   <div
                     style={{
                       display: "flex",
@@ -401,7 +401,7 @@ const Step3 = () => {
               </form>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                  Seleziona una risposta per proseguire
+                  Scegli una risposta per proseguire
                 </div>
               )}
             </div>

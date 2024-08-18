@@ -88,7 +88,7 @@ const Step4 = () => {
               >
                 <select required value={selectedOption} onChange={handleChange}>
                   <option value="" disabled selected hidden>
-                    Seleziona una risposta
+                    Scegli una risposta
                   </option>
                   <option value="1">Piano</option>
                   <option value="2">Batteria</option>
@@ -97,7 +97,7 @@ const Step4 = () => {
                 </select>
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                    Seleziona una risposta per proseguire
+                    Scegli una risposta per proseguire
                   </div>
                 )}
               </div>
@@ -237,7 +237,7 @@ const Step4 = () => {
             >
               <select required value={selectedOption} onChange={handleChange}>
                 <option value="" disabled selected hidden>
-                  Seleziona una risposta
+                  Scegli una risposta
                 </option>
                 <option value="1">Piano</option>
                 <option value="2">Batteria</option>
@@ -246,7 +246,7 @@ const Step4 = () => {
               </select>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
-                  Seleziona una risposta per proseguire
+                  Scegli una risposta per proseguire
                 </div>
               )}
             </div>
