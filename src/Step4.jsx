@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import HP_Magia from "./assets/HP_Magia.png";
+import HP_Magia_Landing from "./assets/HP_Magia_Landing.png";
 import HP_Prosegui from "./assets/HP_Prosegui.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 
@@ -64,7 +65,7 @@ const Step4 = () => {
               }}
             >
               <img
-                src={HP_Magia}
+                src={HP_Magia_Landing}
                 style={{
                   width: "30vw",
                 }}
