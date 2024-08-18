@@ -102,7 +102,13 @@ const App = () => {
             }}
           >
             © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
-            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
+            e Policy consultabili su:{" "}
+            <a
+              href="https://bambiniegenitori.it"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <u>bambiniegenitori.it</u>
+            </a>
           </div>
         </div>
       )}
@@ -165,7 +171,13 @@ const App = () => {
             }}
           >
             © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
-            e Policy consultabili su: <u>https://bambiniegenitori.it</u>
+            e Policy consultabili su:{" "}
+            <a
+              href="https://bambiniegenitori.it"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <u>bambiniegenitori.it</u>
+            </a>
           </div>
         </div>
       )}
