@@ -138,7 +138,7 @@ const App = () => {
               marginBottom: "0px",
             }}
           >
-            Scopri a quale casa di Magia appartieni!
+            A quale casa di Magia appartieni?
           </h1>
 
           <img
