@@ -110,7 +110,8 @@ const Risultato = () => {
                 }}
               >
                 ⚠️ <b>Per giocare</b> bisogna essere collegati con le
-                credenziali create al primo accesso. Non l’hai ancora fatto?{" "}
+                credenziali create al primo accesso.
+                <br /> Non l’hai ancora fatto?{" "}
                 <a
                   onClick={(e) => {
                     e.preventDefault();
@@ -330,7 +331,8 @@ const Risultato = () => {
               }}
             >
               ⚠️ <b>Per giocare</b> bisogna essere collegati con le credenziali
-              create al primo accesso. Non l’hai ancora fatto?{" "}
+              create al primo accesso.
+              <br /> Non l’hai ancora fatto?{" "}
               <a
                 onClick={(e) => {
                   e.preventDefault();
