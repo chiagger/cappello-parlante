@@ -214,7 +214,7 @@ const Risultato = () => {
                   margin: 0,
                 }}
               >
-                👉Prima di iniziare - per giocare in sicurezza - bisogna essere
+                ⚠️ Prima di iniziare - per giocare in sicurezza - bisogna essere
                 collegati con le credenziali (username e password) create al
                 primo accesso. Non l’hai ancora fatto?{" "}
                 <a
@@ -435,7 +435,7 @@ const Risultato = () => {
                 margin: 0,
               }}
             >
-              👉Prima di iniziare - per giocare in sicurezza - bisogna essere
+              ⚠️ Prima di iniziare - per giocare in sicurezza - bisogna essere
               collegati con le credenziali (username e password) create al primo
               accesso. Non l’hai ancora fatto?{" "}
               <a
