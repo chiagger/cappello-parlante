@@ -98,6 +98,7 @@ const App = () => {
               lineHeight: "1.2",
               position: "absolute",
               bottom: "0",
+              marginBottom: "10px",
             }}
           >
             © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
@@ -160,6 +161,7 @@ const App = () => {
               color: "#d4d4d4",
               fontSize: "0.7em",
               lineHeight: "1.2",
+              marginBottom: "10px",
             }}
           >
             © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
