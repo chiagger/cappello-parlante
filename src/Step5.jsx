@@ -86,15 +86,87 @@ const Step5 = () => {
                   marginTop: "40px",
                 }}
               >
-                <select required value={selectedOption} onChange={handleChange}>
-                  <option value="" disabled selected hidden>
-                    Scegli una risposta
-                  </option>
-                  <option value="1">Gatto</option>
-                  <option value="2">Gufo</option>
-                  <option value="3">Rospo</option>
-                  <option value="4">Topo</option>
-                </select>
+                <form action="">
+                  <fieldset
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "20px",
+                    }}
+                  >
+                    <legend style={{ fontSize: "1.5em", textAlign: "center" }}>
+                      Scegli una risposta
+                    </legend>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="1"
+                        checked={selectedOption === "1"}
+                        onChange={handleChange}
+                      />
+                      Gatto
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="2"
+                        checked={selectedOption === "2"}
+                        onChange={handleChange}
+                      />
+                      Gufo
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="3"
+                        checked={selectedOption === "3"}
+                        onChange={handleChange}
+                      />
+                      Rospo
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="4"
+                        checked={selectedOption === "4"}
+                        onChange={handleChange}
+                      />
+                      Topo
+                    </div>
+                  </fieldset>
+                </form>
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                     Scegli una risposta per proseguire
@@ -174,8 +246,6 @@ const Step5 = () => {
               color: "#d4d4d4",
               fontSize: "0.7em",
               lineHeight: "1.2",
-              position: "absolute",
-              bottom: "0",
               marginBottom: "10px",
             }}
           >
@@ -233,17 +303,91 @@ const Step5 = () => {
                 color: "#d4d4d4",
                 flex: "1 1 50%",
                 marginTop: "40px",
+                width: "85vw",
               }}
             >
-              <select required value={selectedOption} onChange={handleChange}>
-                <option value="" disabled selected hidden>
-                  Scegli una risposta
-                </option>
-                <option value="1">Gatto</option>
-                <option value="2">Gufo</option>
-                <option value="3">Rospo</option>
-                <option value="4">Topo</option>
-              </select>
+              <form action="">
+                <fieldset
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
+                  }}
+                >
+                  <legend style={{ fontSize: "1.5em", textAlign: "center" }}>
+                    Scegli una risposta
+                  </legend>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="1"
+                      checked={selectedOption === "1"}
+                      onChange={handleChange}
+                    />
+                    Gatto
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="2"
+                      checked={selectedOption === "2"}
+                      onChange={handleChange}
+                    />
+                    Gufo
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="3"
+                      checked={selectedOption === "3"}
+                      onChange={handleChange}
+                    />
+                    Rospo
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="4"
+                      checked={selectedOption === "4"}
+                      onChange={handleChange}
+                    />
+                    Topo
+                  </div>
+                </fieldset>
+              </form>
+
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                   Scegli una risposta per proseguire

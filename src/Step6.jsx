@@ -87,17 +87,122 @@ const Step6 = () => {
                   marginTop: "40px",
                 }}
               >
-                <select required value={selectedOption} onChange={handleChange}>
-                  <option value="" disabled selected hidden>
-                    Scegli una risposta
-                  </option>
-                  <option value="1">Centauri</option>
-                  <option value="2">Lupi Mannari</option>
-                  <option value="3">Vampiri</option>
-                  <option value="4">Goblin</option>
-                  <option value="5">Troll</option>
-                  <option value="6">Fantasmi</option>
-                </select>
+                <form action="">
+                  <fieldset
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "20px",
+                    }}
+                  >
+                    <legend style={{ fontSize: "1.5em", textAlign: "center" }}>
+                      Scegli una risposta
+                    </legend>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="1"
+                        checked={selectedOption === "1"}
+                        onChange={handleChange}
+                      />
+                      Centauri
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="2"
+                        checked={selectedOption === "2"}
+                        onChange={handleChange}
+                      />
+                      Lupi Mannari
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="3"
+                        checked={selectedOption === "3"}
+                        onChange={handleChange}
+                      />
+                      Vampiri
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="4"
+                        checked={selectedOption === "4"}
+                        onChange={handleChange}
+                      />
+                      Goblin
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="5"
+                        checked={selectedOption === "5"}
+                        onChange={handleChange}
+                      />
+                      Troll
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="6"
+                        checked={selectedOption === "6"}
+                        onChange={handleChange}
+                      />
+                      Fantasmi
+                    </div>
+                  </fieldset>
+                </form>
+
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                     Scegli una risposta per proseguire
@@ -199,8 +304,6 @@ const Step6 = () => {
               color: "#d4d4d4",
               fontSize: "0.7em",
               lineHeight: "1.2",
-              position: "absolute",
-              bottom: "0",
               marginBottom: "10px",
             }}
           >
@@ -259,19 +362,124 @@ const Step6 = () => {
                 color: "#d4d4d4",
                 flex: "1 1 50%",
                 marginTop: "40px",
+                width: "85vw",
               }}
             >
-              <select required value={selectedOption} onChange={handleChange}>
-                <option value="" disabled selected hidden>
-                  Scegli una risposta
-                </option>
-                <option value="1">Centauri</option>
-                <option value="2">Lupi Mannari</option>
-                <option value="3">Vampiri</option>
-                <option value="4">Goblin</option>
-                <option value="5">Troll</option>
-                <option value="6">Fantasmi</option>
-              </select>
+              <form action="">
+                <fieldset
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
+                  }}
+                >
+                  <legend style={{ fontSize: "1.5em", textAlign: "center" }}>
+                    Scegli una risposta
+                  </legend>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="1"
+                      checked={selectedOption === "1"}
+                      onChange={handleChange}
+                    />
+                    Centauri
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="2"
+                      checked={selectedOption === "2"}
+                      onChange={handleChange}
+                    />
+                    Lupi Mannari
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="3"
+                      checked={selectedOption === "3"}
+                      onChange={handleChange}
+                    />
+                    Vampiri
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="4"
+                      checked={selectedOption === "4"}
+                      onChange={handleChange}
+                    />
+                    Goblin
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="5"
+                      checked={selectedOption === "5"}
+                      onChange={handleChange}
+                    />
+                    Troll
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="6"
+                      checked={selectedOption === "6"}
+                      onChange={handleChange}
+                    />
+                    Fantasmi
+                  </div>
+                </fieldset>
+              </form>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                   Scegli una risposta per proseguire

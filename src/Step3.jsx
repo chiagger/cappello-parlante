@@ -310,6 +310,7 @@ const Step3 = () => {
                 color: "#d4d4d4",
                 flex: "1 1 50%",
                 marginTop: "40px",
+                width: "90vw",
               }}
             >
               <form action="">

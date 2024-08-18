@@ -86,16 +86,103 @@ const Step2 = () => {
                   marginTop: "40px",
                 }}
               >
-                <select required value={selectedOption} onChange={handleChange}>
-                  <option value="" disabled selected hidden>
-                    Scegli una risposta
-                  </option>
-                  <option value="1">Restare da soli</option>
-                  <option value="2">Annoiarsi</option>
-                  <option value="3">Avere molta fame</option>
-                  <option value="4">Essere ignorati</option>
-                  <option value="5">Sentire tanto freddo</option>
-                </select>
+                <form action="">
+                  <fieldset
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "20px",
+                    }}
+                  >
+                    <legend>Scegli una risposta</legend>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="1"
+                        checked={selectedOption === "1"}
+                        onChange={handleChange}
+                      />
+                      Restare da soli
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="2"
+                        checked={selectedOption === "2"}
+                        onChange={handleChange}
+                      />
+                      Annoiarsi
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="3"
+                        checked={selectedOption === "3"}
+                        onChange={handleChange}
+                      />
+                      Avere molta fame
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="4"
+                        checked={selectedOption === "4"}
+                        onChange={handleChange}
+                      />
+                      Essere ignorati
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "start",
+                        gap: "1vw",
+                      }}
+                    >
+                      <input
+                        type="radio"
+                        name="linguaggio"
+                        value="5"
+                        checked={selectedOption === "5"}
+                        onChange={handleChange}
+                      />
+                      Sentire tanto freddo
+                    </div>
+                  </fieldset>
+                </form>
+
                 {displayError && (
                   <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                     Scegli una risposta per proseguire
@@ -186,8 +273,6 @@ const Step2 = () => {
               color: "#d4d4d4",
               fontSize: "0.7em",
               lineHeight: "1.2",
-              position: "absolute",
-              bottom: "0",
               marginBottom: "10px",
             }}
           >
@@ -245,18 +330,107 @@ const Step2 = () => {
                 color: "#d4d4d4",
                 flex: "1 1 50%",
                 marginTop: "40px",
+                width: "85vw",
               }}
             >
-              <select required value={selectedOption} onChange={handleChange}>
-                <option value="" disabled selected hidden>
-                  Scegli una risposta
-                </option>
-                <option value="1">Restare da soli</option>
-                <option value="2">Annoiarsi</option>
-                <option value="3">Avere molta fame</option>
-                <option value="4">Essere ignorati</option>
-                <option value="5">Sentire tanto freddo</option>
-              </select>
+              <form action="">
+                <fieldset
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
+                  }}
+                >
+                  <legend style={{ fontSize: "1.5em" }}>
+                    Scegli una risposta
+                  </legend>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="1"
+                      checked={selectedOption === "1"}
+                      onChange={handleChange}
+                    />
+                    Restare da soli
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="2"
+                      checked={selectedOption === "2"}
+                      onChange={handleChange}
+                    />
+                    Annoiarsi
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="3"
+                      checked={selectedOption === "3"}
+                      onChange={handleChange}
+                    />
+                    Avere molta fame
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="4"
+                      checked={selectedOption === "4"}
+                      onChange={handleChange}
+                    />
+                    Essere ignorati
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "start",
+                      gap: "1vw",
+                    }}
+                  >
+                    <input
+                      type="radio"
+                      name="linguaggio"
+                      value="5"
+                      checked={selectedOption === "5"}
+                      onChange={handleChange}
+                    />
+                    Sentire tanto freddo
+                  </div>
+                </fieldset>
+              </form>
               {displayError && (
                 <div style={{ fontSize: "0.8em", color: "#fc6565" }}>
                   Scegli una risposta per proseguire
