@@ -80,7 +80,7 @@ const Risultato = () => {
             ></img>
             <div
               style={{
-                border: "1px solid white",
+                // border: "1px solid white",
                 borderRadius: "10px",
                 margin: "5%",
                 display: "flex",
@@ -302,7 +302,7 @@ const Risultato = () => {
           ></img>
           <div
             style={{
-              border: "1px solid white",
+              // border: "1px solid white",
               margin: "5%",
               display: "flex",
               borderRadius: "10px",
