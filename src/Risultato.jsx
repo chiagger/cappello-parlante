@@ -352,7 +352,7 @@ const Risultato = () => {
               width: "100%",
               textAlign: "center",
               color: "#d4d4d4",
-              fontSize: "0.9em",
+              fontSize: "0.7em",
               lineHeight: "1.2",
             }}
           >

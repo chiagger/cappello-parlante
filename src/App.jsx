@@ -155,7 +155,7 @@ const App = () => {
           </a>
           <div
             style={{
-              width: "80%",
+              width: "100%",
               textAlign: "center",
               color: "#d4d4d4",
               fontSize: "0.7em",
