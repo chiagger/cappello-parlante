@@ -410,6 +410,7 @@ const Risultato = () => {
               border: "1px solid white",
               margin: "5%",
               display: "flex",
+              borderRadius: "10px",
               alignItems: "center",
               justifyContent: "center",
             }}
@@ -417,9 +418,21 @@ const Risultato = () => {
             <h3
               className="title info"
               style={{
-                color: "#d4d4d4",
-                textAlign: "center",
-                width: "90%",
+                color: `${
+                  result === "t" || result === "s" ? "#424242" : "#d4d4d4"
+                }`,
+                borderRadius: "10px",
+                backgroundColor: `${
+                  result === "c"
+                    ? "#3c87b2"
+                    : result === "g"
+                    ? "#AB0E00"
+                    : result === "s"
+                    ? "#34ba00"
+                    : "#eddd00"
+                }`,
+                padding: "10px",
+                margin: 0,
               }}
             >
               👉Prima di iniziare - per giocare in sicurezza - bisogna essere
