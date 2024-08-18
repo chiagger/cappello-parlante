@@ -77,7 +77,7 @@ const Step7 = () => {
                   flex: "1 1 50%",
                 }}
               >
-                Hai davanti quattro scaole. Quale desideri aprire?{" "}
+                Hai davanti quattro scrigni. Quale desideri aprire?{" "}
               </h1>
               <div
                 className="box"
@@ -112,7 +112,7 @@ const Step7 = () => {
                         checked={selectedOption === "1"}
                         onChange={handleChange}
                       />
-                      Una scintillante scatola nera con serratura e chiave
+                      Una scintillante scrigno nero con serratura e chiave
                       argentati, con incastonata una misteriosa runa che sai
                       essere il marchio di Mago Merlino.
                     </div>
@@ -131,7 +131,7 @@ const Step7 = () => {
                         checked={selectedOption === "2"}
                         onChange={handleChange}
                       />
-                      Una piccola scatola di peltro, semplice e senza pretese,
+                      Un piccolo scrigno di peltro, semplice e senza pretese,
                       con una targhetta che dice "Mi apro solo per chi ne è
                       degno".
                     </div>
@@ -150,8 +150,8 @@ const Step7 = () => {
                         checked={selectedOption === "3"}
                         onChange={handleChange}
                       />
-                      Una piccola scatola a forma di tartaruga con il bordo
-                      dorato, all'interno della quale sembra “strillare” qualche
+                      Un piccolo scrigno a forma di tartaruga con il bordo
+                      dorato, all'interno del quale sembra “strillare” qualche
                       piccola creatura.
                     </div>
                     <div
@@ -304,7 +304,7 @@ const Step7 = () => {
                 marginBottom: "0px",
               }}
             >
-              Hai davanti quattro scaole. Quale desideri aprire?
+              Hai davanti quattro scrigni. Quale desideri aprire?
             </h1>
 
             <div
@@ -322,6 +322,7 @@ const Step7 = () => {
                     display: "flex",
                     flexDirection: "column",
                     gap: "20px",
+                    textAlign: "left",
                   }}
                 >
                   <legend>Scegli una risposta:</legend>
@@ -340,7 +341,7 @@ const Step7 = () => {
                       checked={selectedOption === "1"}
                       onChange={handleChange}
                     />
-                    Una scintillante scatola nera con serratura e chiave
+                    Una scintillante scrigno nero con serratura e chiave
                     argentati, con incastonata una misteriosa runa che sai
                     essere il marchio di Mago Merlino.
                   </div>
@@ -359,7 +360,7 @@ const Step7 = () => {
                       checked={selectedOption === "2"}
                       onChange={handleChange}
                     />
-                    Una piccola scatola di peltro, semplice e senza pretese, con
+                    Un piccolo scrigno di peltro, semplice e senza pretese, con
                     una targhetta che dice "Mi apro solo per chi ne è degno".
                   </div>
                   <div
@@ -377,9 +378,9 @@ const Step7 = () => {
                       checked={selectedOption === "3"}
                       onChange={handleChange}
                     />
-                    Una piccola scatola a forma di tartaruga con il bordo
-                    dorato, all'interno della quale sembra “strillare” qualche
-                    piccola creatura.
+                    Un piccolo scrigno a forma di tartaruga con il bordo dorato,
+                    all'interno del quale sembra “strillare” qualche piccola
+                    creatura.
                   </div>
                   <div
                     style={{
