@@ -235,14 +235,14 @@ const Risultato = () => {
                 </a>
               </h3>
             </div>
-            <h4
+            <h2
               className="title"
               style={{
                 color: "#d4d4d4",
                 marginBottom: "50px",
               }}
             >
-              Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+              Vuoi scoprire le altre case Magiche? Le trovi tutte{" "}
               <a
                 onClick={(e) => {
                   e.preventDefault();
@@ -259,7 +259,7 @@ const Risultato = () => {
               >
                 <u>Qui</u>
               </a>
-            </h4>
+            </h2>
             <div
               style={{
                 width: "100%",
@@ -456,7 +456,7 @@ const Risultato = () => {
               </a>
             </h3>
           </div>
-          <h4
+          <h2
             className="title"
             style={{
               color: "#d4d4d4",
@@ -465,7 +465,7 @@ const Risultato = () => {
               marginTop: "0",
             }}
           >
-            Vuoi scoprire anche le altre case Magiche? Le trovi tutte{" "}
+            Vuoi scoprire le altre case Magiche? Le trovi tutte{" "}
             <a
               onClick={(e) => {
                 e.preventDefault();
@@ -482,7 +482,7 @@ const Risultato = () => {
             >
               <u>Qui</u>
             </a>
-          </h4>
+          </h2>
           <div
             style={{
               width: "100%",
