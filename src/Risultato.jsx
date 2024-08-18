@@ -78,6 +78,59 @@ const Risultato = () => {
                 width: "30vw",
               }}
             ></img>
+            <div
+              style={{
+                border: "1px solid white",
+                borderRadius: "10px",
+                margin: "5%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <h3
+                className="title info"
+                style={{
+                  color: `${
+                    result === "t" || result === "s" ? "#424242" : "#d4d4d4"
+                  }`,
+                  borderRadius: "10px",
+                  backgroundColor: `${
+                    result === "c"
+                      ? "#3c87b2"
+                      : result === "g"
+                      ? "#AB0E00"
+                      : result === "s"
+                      ? "#34ba00"
+                      : "#eddd00"
+                  }`,
+                  padding: "10px",
+                  margin: 0,
+                }}
+              >
+                ⚠️ <b>Per giocare</b> bisogna essere collegati con le
+                credenziali create al primo accesso. Non l’hai ancora fatto?{" "}
+                <a
+                  onClick={(e) => {
+                    e.preventDefault();
+
+                    window.open(
+                      "https://bambiniegenitori.it/registrati/",
+                      "_blank"
+                    );
+                  }}
+                  style={{
+                    color: "inherit",
+                    cursor: "pointer",
+                  }}
+                >
+                  <u>
+                    <b>Registrati</b>
+                  </u>
+                </a>
+              </h3>
+            </div>
             <h1
               className="title"
               style={{
@@ -183,58 +236,6 @@ const Risultato = () => {
               </a>
             </h4>
 
-            <div
-              style={{
-                border: "1px solid white",
-                borderRadius: "10px",
-                margin: "5%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginBottom: "10px",
-              }}
-            >
-              <h3
-                className="title info"
-                style={{
-                  color: `${
-                    result === "t" || result === "s" ? "#424242" : "#d4d4d4"
-                  }`,
-                  borderRadius: "10px",
-                  backgroundColor: `${
-                    result === "c"
-                      ? "#3c87b2"
-                      : result === "g"
-                      ? "#AB0E00"
-                      : result === "s"
-                      ? "#34ba00"
-                      : "#eddd00"
-                  }`,
-                  padding: "10px",
-                  margin: 0,
-                }}
-              >
-                ⚠️ Prima di iniziare - per giocare in sicurezza - bisogna essere
-                collegati con le credenziali (username e password) create al
-                primo accesso. Non l’hai ancora fatto?{" "}
-                <a
-                  onClick={(e) => {
-                    e.preventDefault();
-
-                    window.open(
-                      "https://bambiniegenitori.it/registrati/",
-                      "_blank"
-                    );
-                  }}
-                  style={{
-                    color: "inherit",
-                    cursor: "pointer",
-                  }}
-                >
-                  <u>Registrati</u>
-                </a>
-              </h3>
-            </div>
             <h2
               className="title"
               style={{
@@ -298,6 +299,58 @@ const Risultato = () => {
               width: "90vw",
             }}
           ></img>
+          <div
+            style={{
+              border: "1px solid white",
+              margin: "5%",
+              display: "flex",
+              borderRadius: "10px",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <h3
+              className="title info"
+              style={{
+                color: `${
+                  result === "t" || result === "s" ? "#424242" : "#d4d4d4"
+                }`,
+                borderRadius: "10px",
+                backgroundColor: `${
+                  result === "c"
+                    ? "#3c87b2"
+                    : result === "g"
+                    ? "#AB0E00"
+                    : result === "s"
+                    ? "#34ba00"
+                    : "#eddd00"
+                }`,
+                padding: "10px",
+                margin: 0,
+              }}
+            >
+              ⚠️ <b>Per giocare</b> bisogna essere collegati con le credenziali
+              create al primo accesso. Non l’hai ancora fatto?{" "}
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+
+                  window.open(
+                    "https://bambiniegenitori.it/registrati/",
+                    "_blank"
+                  );
+                }}
+                style={{
+                  color: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                <u>
+                  <b>Registrati</b>
+                </u>
+              </a>
+            </h3>
+          </div>
           <h1
             className="title"
             style={{
@@ -406,57 +459,6 @@ const Risultato = () => {
             </a>
           </h4>
 
-          <div
-            style={{
-              border: "1px solid white",
-              margin: "5%",
-              display: "flex",
-              borderRadius: "10px",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <h3
-              className="title info"
-              style={{
-                color: `${
-                  result === "t" || result === "s" ? "#424242" : "#d4d4d4"
-                }`,
-                borderRadius: "10px",
-                backgroundColor: `${
-                  result === "c"
-                    ? "#3c87b2"
-                    : result === "g"
-                    ? "#AB0E00"
-                    : result === "s"
-                    ? "#34ba00"
-                    : "#eddd00"
-                }`,
-                padding: "10px",
-                margin: 0,
-              }}
-            >
-              ⚠️ Prima di iniziare - per giocare in sicurezza - bisogna essere
-              collegati con le credenziali (username e password) create al primo
-              accesso. Non l’hai ancora fatto?{" "}
-              <a
-                onClick={(e) => {
-                  e.preventDefault();
-
-                  window.open(
-                    "https://bambiniegenitori.it/registrati/",
-                    "_blank"
-                  );
-                }}
-                style={{
-                  color: "inherit",
-                  cursor: "pointer",
-                }}
-              >
-                <u>Registrati</u>
-              </a>
-            </h3>
-          </div>
           <h2
             className="title"
             style={{
