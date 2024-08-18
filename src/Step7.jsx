@@ -96,7 +96,7 @@ const Step7 = () => {
                       textAlign: "left",
                     }}
                   >
-                    <legend>Scegli una risposta</legend>
+                    <legend>Scegli una risposta:</legend>
                     <div
                       style={{
                         display: "flex",
@@ -324,7 +324,7 @@ const Step7 = () => {
                     gap: "20px",
                   }}
                 >
-                  <legend>Scegli una risposta</legend>
+                  <legend>Scegli una risposta:</legend>
                   <div
                     style={{
                       display: "flex",

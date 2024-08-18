@@ -96,7 +96,7 @@ const Step2 = () => {
                       textAlign: "left",
                     }}
                   >
-                    <legend>Scegli una risposta</legend>
+                    <legend>Scegli una risposta:</legend>
                     <div
                       style={{
                         display: "flex",
@@ -344,7 +344,7 @@ const Step2 = () => {
                   }}
                 >
                   <legend style={{ fontSize: "1.5em" }}>
-                    Scegli una risposta
+                    Scegli una risposta:
                   </legend>
                   <div
                     style={{

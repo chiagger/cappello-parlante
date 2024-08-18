@@ -97,7 +97,7 @@ const Step5 = () => {
                     }}
                   >
                     <legend style={{ fontSize: "1.5em", textAlign: "center" }}>
-                      Scegli una risposta
+                      Scegli una risposta:
                     </legend>
                     <div
                       style={{
@@ -317,7 +317,7 @@ const Step5 = () => {
                   }}
                 >
                   <legend style={{ fontSize: "1.5em", textAlign: "center" }}>
-                    Scegli una risposta
+                    Scegli una risposta:
                   </legend>
                   <div
                     style={{
