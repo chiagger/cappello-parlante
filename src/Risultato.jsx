@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import HP_Magia from "./assets/HP_Magia.png";
-import HP_Prosegui from "./assets/HP_Prosegui.png";
-import HP_Cappello from "./assets/HP_Cappello.png";
+import HP_Prosegui from "./assets/HP_Entra.png";
 import HP_Grifondoro from "./assets/HP_Grifondoro.png";
 import HP_Corvonero from "./assets/HP_Corvonero.png";
 import HP_Serpeverde from "./assets/HP_Serpeverde.png";

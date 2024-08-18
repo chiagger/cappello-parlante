@@ -406,12 +406,6 @@ const Step7 = () => {
                 </div>
               )}
             </div>
-            <img
-              src={HP_Cappello}
-              style={{
-                width: "90vw",
-              }}
-            ></img>
 
             <a
               onClick={(e) => {

@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import React from "react";
-import HP_Magia from "./assets/HP_Magia.png";
+import HP_Magia from "./assets/HP_Magia_Landing.png";
 import HP_Inizia from "./assets/HP_Inizia.png";
 import HP_Cappello from "./assets/HP_Cappello.png";
 
