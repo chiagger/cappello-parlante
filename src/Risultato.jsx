@@ -144,6 +144,8 @@ const Risultato = () => {
               className="title"
               style={{
                 color: "#d4d4d4",
+                width: "80vw",
+                textAlign: "center",
               }}
             >
               Oppure digita:{" "}
@@ -184,6 +186,7 @@ const Risultato = () => {
             <div
               style={{
                 border: "1px solid white",
+                borderRadius: "10px",
                 margin: "5%",
                 display: "flex",
                 alignItems: "center",
@@ -192,9 +195,23 @@ const Risultato = () => {
               }}
             >
               <h3
-                className="title"
+                className="title info"
                 style={{
-                  color: "#d4d4d4",
+                  color: `${
+                    result === "t" || result === "s" ? "#424242" : "#d4d4d4"
+                  }`,
+                  borderRadius: "10px",
+                  backgroundColor: `${
+                    result === "c"
+                      ? "#3c87b2"
+                      : result === "g"
+                      ? "#AB0E00"
+                      : result === "s"
+                      ? "#34ba00"
+                      : "#eddd00"
+                  }`,
+                  padding: "10px",
+                  margin: 0,
                 }}
               >
                 👉Prima di iniziare - per giocare in sicurezza - bisogna essere
@@ -398,7 +415,7 @@ const Risultato = () => {
             }}
           >
             <h3
-              className="title"
+              className="title info"
               style={{
                 color: "#d4d4d4",
                 textAlign: "center",
