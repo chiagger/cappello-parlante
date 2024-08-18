@@ -70,6 +70,7 @@ const App = () => {
                 style={{
                   color: "#d4d4d4",
                   flex: "1 1 50%",
+                  fontSize: "2.5em",
                 }}
               >
                 A quale casa Magica appartieni?
