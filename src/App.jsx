@@ -125,7 +125,7 @@ const App = () => {
           <img
             src={HP_Magia}
             style={{
-              width: "70vw",
+              width: "90vw",
             }}
           ></img>
           <h1
@@ -138,7 +138,7 @@ const App = () => {
               marginBottom: "0px",
             }}
           >
-            A quale casa di Magia appartieni?
+            A quale casa Magica appartieni?
           </h1>
 
           <img

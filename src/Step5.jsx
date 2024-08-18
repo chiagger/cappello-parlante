@@ -211,7 +211,7 @@ const Step5 = () => {
             <img
               src={HP_Magia}
               style={{
-                width: "70vw",
+                width: "90vw",
               }}
             ></img>
             <h1
