@@ -368,6 +368,7 @@ const Risultato = () => {
             className="title"
             style={{
               color: "#d4d4d4",
+              textAlign: "center",
             }}
           >
             Oppure digita:{" "}
