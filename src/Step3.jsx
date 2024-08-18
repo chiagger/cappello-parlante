@@ -258,7 +258,7 @@ const Step3 = () => {
               marginBottom: "10px",
             }}
           >
-            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            © Copyright 2024 Bambini e Genitori APS - C.F.03811551203 - Privacy
             e Policy consultabili su:{" "}
             <a
               href="https://bambiniegenitori.it"
@@ -485,7 +485,7 @@ const Step3 = () => {
               lineHeight: "1.2",
             }}
           >
-            © Copyright 2024 Bambini e Genitori APS - C.F. 03811551203 - Privacy
+            © Copyright 2024 Bambini e Genitori APS - C.F.03811551203 - Privacy
             e Policy consultabili su:{" "}
             <a
               href="https://bambiniegenitori.it"
