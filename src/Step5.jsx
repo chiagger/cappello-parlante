@@ -93,6 +93,7 @@ const Step5 = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "20px",
+                      textAlign: "left",
                     }}
                   >
                     <legend style={{ fontSize: "1.5em", textAlign: "center" }}>

@@ -93,6 +93,7 @@ const Step3 = () => {
                       display: "flex",
                       flexDirection: "column",
                       gap: "20px",
+                      textAlign: "left",
                     }}
                   >
                     <legend>Scegli una risposta</legend>
