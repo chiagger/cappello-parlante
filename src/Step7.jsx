@@ -77,7 +77,7 @@ const Step7 = () => {
                   flex: "1 1 50%",
                 }}
               >
-                Quattro scatole sono davanti a te. Quale non resisti ad aprire?
+                Hai davanti quattro scaole. Quale desideri aprire?{" "}
               </h1>
               <div
                 className="box"
@@ -304,7 +304,7 @@ const Step7 = () => {
                 marginBottom: "0px",
               }}
             >
-              Quattro scatole sono davanti a te. Quale non resisti ad aprire?
+              Hai davanti quattro scaole. Quale desideri aprire?
             </h1>
 
             <div
