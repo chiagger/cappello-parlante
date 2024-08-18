@@ -157,7 +157,7 @@ const Step1 = () => {
                           checked={selectedOption === "3"}
                           onChange={handleChange}
                         />
-                        Invisibilità
+                        Diventare invisibili
                       </div>
                       <div
                         style={{
@@ -435,7 +435,7 @@ const Step1 = () => {
                       checked={selectedOption === "3"}
                       onChange={handleChange}
                     />
-                    Invisibilità
+                    Diventare invisibili
                   </div>
                   <div
                     style={{
